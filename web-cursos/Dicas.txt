@@ -1,0 +1,10 @@
+//HTML
+<p id="dataDeHoje"></p>
+//JS
+const opcoes = { weekday: 'long', year: 'numeric', month: 'long', 
+day: 'numeric' };
+const dataHj = new Date(2007,6,7,7,0,0);
+const dataDeHoje = document.getElementById("dataDeHoje").value;
+dataDeHoje.innerHTML = dataHj.toLocaleDateString("pt-br", opcoes);
+//View
+"sábado, 7 de julho de 2007"
