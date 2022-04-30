@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras Formatações</title>
+  </head>
+
+  <body>
+    <h1>Extra - Outras formatações</h1>
+
+    <h2>Código-fonte / Pré-formatação</h2>
+    <h3>Usando a tag "code" (semântico)</h3>
+    <p>O comando <code>window.document.getElementById("Power")</code> é escrito em linguaguem Javascript.</p>
+    <h3>Usando a tag "pre" (semântico)</h3>
+    <p>
+      A seguir é exibido o código em Python dentro da tag "code", para não perder sua formatação com espaço, usa-se o "code" dentro da tag "prev":
+    </p>
+    <pre>
+      {{{{}}}} Código em Python {{{{}}}}
+      <code>
+      nome = input(str("Qual seu nome? \n r: "))
+      gosto = input(str("gosta de pizza"))
+      if(nome == "Isabela" or nome "isabela"):
+        print(f"{nome} {gosto}")
+      else:
+        print("[Aviso] Ação inválida!")
+      </code>
+    </pre>
+
+    <h2>Citações Simples</h2>
+    <h3>Usando a tag "q" para as aspas (semântico)</h3>
+    <p>Como diria o pai do meu amigo, <q>o computador é um burro muito rápido</q>.</p>
+    
+    <h2>Citações completas</h2>
+    <h3>Usando a tag "blockquote" (semântico)</h3>
+    <blockquote cite="https://www.google.com.br/books/edition/HTML5/tDG-DwAAQBAJ?hl=pt-BR&gbpv=1&dq=html5&printsec=frontcover">
+      Ao contrário da maioria das tecnologias destinadas à criação de documentos, a HTML+ não se destina a determinada a aparência; assim, nomes e tamanhos de fontes, margens, tabulações, espaçamentos entre os elementos não são funções da linguaguem.
+    </blockquote>
+    
+    <h2>Abreviações</h2>
+    <h3>Usando a tag "abbr" (semântico)</h3>
+    <p>Estou a estudar no momento <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. E, estou feliz em aprender!</p>
+    
+    <h2>Ordem escrita de um Texto</h2>
+    <h3>Usando a tag "bdo" (semântico)</h3>
+    <p>Invertido (Dá direita para esquerda): <bdo dir="rtl">Para aprender HTML e CSS, estou a cursar um curso na plataforma Curso em Vídeo.</bdo></p>
+    <p>Normal (Dá esquerda para direita): <bdo dir="ltr">Para aprender HTML e CSS, estou a cursar um curso na plataforma Curso em Vídeo.</bdo></p>
+
+    <h2>Similar um letreiro</h2>
+    <h3>Usando a tag "marquee" (semântico)</h3>
+    <!-- O elemento html <marquee> é usado para inserir uma área de rolagem de texto"scrolling" , similar a um letreiro. Você pode controlar o comportamento do conteúdo fornecendo alguns atributos extras. -->
+    <marquee behavior="" direction="right">Notícias urgentes</marquee>
+  </body>
+
+</html>

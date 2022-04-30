@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 9 Aula 1 – Listas OL e UL</title>
+    <style>
+      /* 
+      Numeração para o exemplo: "1. 1.1 1.1.1 ..."
+
+      ol {
+        counter-reset: item;
+      }
+      ol li {
+        display: block;
+        position: relative;
+      }
+      ol li:before {
+        content: counters(item, ".") ".";
+        counter-increment: item;
+        position: absolute;
+        margin-right: 100%;
+        right: 7px;
+      } 
+      */
+    </style>
+  </head>
+
+  <body>
+    <h1>Capítulo 9 Aula 1 – Listas OL e UL</h1>
+    <p>(<strong>Observação</strong>: Aparte do <abbr title="HyperText Markup Language Version 5">HTML5</abbr> existe a opção de usar a tag "li" sem tag de fechamento).</p>
+    <h2>Lista Ordenada</h2>
+    <!-- 
+      Lista Ordenada:
+      - Se quiser começar a numeração da lista, por exemplo, da posição 4, é preciso indicar na lista o parâmetro 'start="4"'.  
+      - Ao usar o parâmetro 'type=""', existe algumas personalizações, que são: "1" = numeração , "A" e "a" = Ordem Alfabética, "I" e "i" = Número romano. 
+    -->
+    <p>Preferência de doces:</p>
+    <ol type="I">
+      <li>Brigadeiro</li>
+      <li>Beijinho</li>
+      <li>Jujuba</li>
+      <li>Doce em geral</li>
+    </ol>
+
+    <h2>Lista não Ordenada</h2>
+    <!-- 
+      Lista não Ordenada:
+      - Ao usar o parâmetro 'type=""', existe algumas personalizações, que são: "disc" = padrão, "circle" e "square".
+    -->
+    <p>Compras:</p>
+    <ul type="circle">
+      <li>Arroz 5kg</li>
+      <li>Feijãozinho</li>
+      <li>Tomate</li>
+      <li>Cheiro Verde</li>
+      <li>Cebola</li>
+      <li>Pimentão</li>
+    </ul>
+
+    <h2>Listas Aninhadas</h2>
+    <p>Linguagens Favoritas</p>
+    <ol type="1">
+      <li>Linguagem de Programação</li>
+      <ol type="I">
+        <li>Python</li>
+        <ol>
+          <li>Mundo 2</li>
+          <li>Mundo 3</li>
+        </ol>
+        <li>Javascript</li>
+      </ol>
+      <li>Marcação</li>
+      <ol type="I" start="3" >
+        <li>HTML</li>
+      </ol>
+    </ol>
+
+    <h2>Lista de Definição</h2>
+    <p>Linguagens</p>
+    <dl>
+      <dt>HTML</dt>
+      <dd>Linguagem de marcação de texto para  a criação do conteúdo de um site</dd>
+      <dt>CSS</dt>
+      <dd>Linguagem de marcação de texto para a criação de estilo de um site</dd>
+      <dt>Javascript</dt>
+      <dd>Linguagem de programação para a criação de interatividade de um site</dd>
+    </dl>
+  </body>
+
+</html>
