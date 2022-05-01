@@ -16,7 +16,7 @@ main section, .espaco  {
   justify-content: center;
   width: 500px;
   height: 333px;
-  background-image:url('./man-standing-beside-red-coupe.jpg');
+  background-image: url('./man-standing-beside-red-coupe.jpg');
   background-position: center;
   background-size:cover;
   filter:blur(10px);
@@ -30,7 +30,7 @@ main section, .espaco  {
   margin-left:0;
   width: 500px;
   height: 333px;
-  background-image: image-set(url('./man-standing-beside-red-coupe.jpg') 2x);
+  background-image: url('./man-standing-beside-red-coupe.jpg');
   background-position-x: left;
   background-position-y: top;
   background-repeat: no-repeat;

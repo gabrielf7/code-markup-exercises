@@ -5,22 +5,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exibir Vídeo do youtuber</title>
+    <style>
+      main, .areaDoVídeo {
+        display: flex;
+        flex-direction: column;
+      }
+
+      main {
+        margin-top: 100px;
+        justify-content: space-around;
+      }
+
+      section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+
+      .areaDoVídeo {
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        width: 500px;
+        padding: 10px 10px;
+        border-top: 1px solid rgba(255, 114, 92, 100);
+        border-bottom: 1px solid rgba(255, 114, 92, 100);
+      }
+
+      div pre {
+        font: normal 10pt Arial;
+      }
+
+      @media only screen and (max-width: 800px) {
+        main {
+          width: auto;
+        }
+        #objectVideo {
+          width: 300px; height: 220px;
+        }
+        section {
+          flex-direction: column;
+        }
+        .areaDoVídeo {
+          width: auto;
+        }
+        section div {
+          margin-top: 30px;
+        }
+        div pre {
+          width: 300px; overflow: auto;
+          font: normal 7pt Arial;
+        }
+      }
+    </style>
+    <title>Exibir Vídeo do Youtube</title>
   </head>
 
-  <body>  
-    <object width="426" height="240">
-      <param name="movie" value="http://www.youtube.com/v/-TdbsZg6CC4"></param>
-      <param name="allowFullScreen" value="true"></param>
-      <param name="allowscriptaccess" value="always"></param>
-      <embed src="http://www.youtube.com/v/-TdbsZg6CC4"
-        type="application/x-shockwave-flash"
-        allowscriptaccess="always"
-        allowfullscreen="true"
-        width="426"
-        height="240">
-      </embed>
-    </object>
+  <body>
+    <main>
+      <section>
+        <div>
+          Código Fonte
+          <div class="areaDoVídeo">
+            <pre>
+&lt;object width="426" height="240"&gt;
+  &lt;param name="movie" value="http://www.youtube.com/v/-TdbsZg6CC4"&gt;&lt;/param&gt;
+  &lt;param name="allowFullScreen" value="true"&gt;&lt;/param&gt;
+  &lt;param name="allowscriptaccess" value="always"&gt;&lt;/param&gt;
+  &lt;embed src="http://www.youtube.com/v/-TdbsZg6CC4"
+    type="application/x-shockwave-flash"
+    allowscriptaccess="always"
+    allowfullscreen="true"
+    width="426"
+    height="240"&gt;
+  &lt;/embed&gt;
+&lt;/object&gt;
+              </pre>
+          </div>
+        </div>
+
+        <div>
+          Vídeo do Youtube
+          <div class="areaDoVídeo">
+            <object width="426" height="240" id="objectVideo">
+              <param name="movie" value="http://www.youtube.com/v/-TdbsZg6CC4">
+              </param>
+              <param name="allowFullScreen" value="true">
+              </param>
+              <param name="allowscriptaccess" value="always">
+              </param>
+              <embed src="http://www.youtube.com/v/-TdbsZg6CC4" type="application/x-shockwave-flash"
+                allowscriptaccess="always" allowfullscreen="true" width="426" height="240">
+              </embed>
+            </object>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 
 </html>
