@@ -1,9 +1,9 @@
 main {
-  padding: 40px;
+  padding: 5px;
   display: flex;
-  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  text-align: center;
 }
 
 main section, .espaco  {
@@ -12,31 +12,38 @@ main section, .espaco  {
 
 /* Efeito borrado: normal */
 .my-bg-1 {
-  display: flex;
-  justify-content: center;
   width: 500px;
   height: 333px;
   background-image: url('./man-standing-beside-red-coupe.jpg');
-  background-position: center;
-  background-size:cover;
-  filter:blur(10px);
+
+  filter: blur(10px);
   transition:filter .5s ease;
   backface-visibility: hidden;
 }
 
-/* Efeito borrado: localizado na foto */
+/* Efeito borrado: localizado em uma posição na foto */
 .my-bg-2 {
   position: relative;
   margin-left:0;
   width: 500px;
   height: 333px;
+
   background-image: url('./man-standing-beside-red-coupe.jpg');
-  background-position-x: left;
-  background-position-y: top;
+  background-position: right;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size:cover;
-  filter:blur(10px);
+  
+  filter: blur(10px);
   transition:filter .5s ease;
   backface-visibility: hidden;
+}
+
+@media only screen and (max-width: 800px) {
+  main {
+    flex-direction: column;
+  }
+  .my-bg-1, .my-bg-2{
+    width: 310px;
+  }
 }

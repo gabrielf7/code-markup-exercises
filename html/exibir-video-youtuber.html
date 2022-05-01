@@ -40,14 +40,18 @@
         main {
           width: auto;
         }
-        #objectVideo {
-          width: 300px; height: 220px;
-        }
         section {
           flex-direction: column;
+          margin-bottom: 100px;
         }
         .areaDoVídeo {
           width: auto;
+        }
+        .areaDoVídeo object {
+          width: inherit;
+        }
+        .areaDoVídeo object embed {
+          width:inherit; height: inherit;
         }
         section div {
           margin-top: 30px;
@@ -69,15 +73,16 @@
           <div class="areaDoVídeo">
             <pre>
 &lt;object width="426" height="240"&gt;
-  &lt;param name="movie" value="https://www.youtube.com/v/-TdbsZg6CC4"&gt;&lt;/param&gt;
+  &lt;param name="movie" value="https://www.youtube.com/v/8shYHJ5AdEc"&gt;&lt;/param&gt;
   &lt;param name="allowFullScreen" value="true"&gt;&lt;/param&gt;
   &lt;param name="allowscriptaccess" value="always"&gt;&lt;/param&gt;
-  &lt;embed src="https://www.youtube.com/v/-TdbsZg6CC4"
+  &lt;embed src="https://www.youtube.com/v/8shYHJ5AdEc"
     type="application/x-shockwave-flash"
     allowscriptaccess="always"
     allowfullscreen="true"
     width="426"
-    height="240"&gt;
+    height="240"
+  &gt;
   &lt;/embed&gt;
 &lt;/object&gt;
               </pre>
@@ -87,15 +92,18 @@
         <div>
           Vídeo do Youtube
           <div class="areaDoVídeo">
-            <object width="426" height="240" id="objectVideo">
-              <param name="movie" value="https://www.youtube.com/v/-TdbsZg6CC4">
-              </param>
-              <param name="allowFullScreen" value="true">
-              </param>
-              <param name="allowscriptaccess" value="always">
-              </param>
-              <embed src="https://www.youtube.com/v/-TdbsZg6CC4" type="application/x-shockwave-flash"
-                allowscriptaccess="always" allowfullscreen="true" width="426" height="240">
+            <object width="450" height="250">
+              <param name="movie" value="https://www.youtube.com/v/8shYHJ5AdEc"></param>
+              <param name="allowFullScreen" value="true"></param>
+              <param name="allowscriptaccess" value="always"></param>
+              <embed 
+                src="https://www.youtube.com/v/8shYHJ5AdEc" 
+                type="application/x-shockwave-flash"
+                allowscriptaccess="always" 
+                allowfullscreen="true" 
+                width="450" 
+                height="250"
+              >
               </embed>
             </object>
           </div>
