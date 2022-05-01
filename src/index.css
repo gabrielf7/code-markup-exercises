@@ -1,4 +1,5 @@
 body {
+  margin: 0;
   font: normal 10pt Arial;
 }
 
@@ -15,13 +16,16 @@ a {
 }
 
 header h1 {
-  margin-top: 20px;
   text-align: center;
-  color: rgba(255, 114, 92, 100);
+  color: rgba(255, 114, 92, 0.9);
+}
+
+.h1EstiloEscuro {
+  color: white;
 }
 
 main {
-  height: 77vh;
+  height: 70vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -38,25 +42,37 @@ footer p a {
   text-decoration: none; color: inherit;
 }
 
-.bg {
+.bg, .bgEstiloEscuro{
   left: 0;
   right: 0;
-  z-index: 1;
+  
   position: fixed;
   display: block;
   height: 100vh;
   width: 100vw;
-  background-image: url('./bg-imagem-ambiente-web.jpg');
+  
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size:cover;
+
   -webkit-filter: blur(5px);
   filter: blur(5px);
   -moz-filter: blur(5px);
   -o-filter: blur(5px);
   -ms-filter: blur(5px);
+
   transition:filter .5s ease;
   backface-visibility: hidden;
+}
+
+.bg {
+  z-index: 1;
+  background-image: url('./bg-imagem-ambiente-web.jpg');
+}
+
+.bgEstiloEscuro {
+  z-index: 50;
+  background-color: rgba(0, 0, 0, 0.377);
 }
 
 .main00 {
@@ -67,18 +83,20 @@ footer p a {
 }
 
 #freepik {
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 20px;
+  margin-top: 10px;
   font: normal 7pt Arial;
-  padding-right: 10px;
 }
-#freepik em {
+#freepikEm {
   color: rgb(4, 193, 240);
 }
-#freepik em strong {
-  color: rgba(255, 114, 92, 100);
+#freepikStrong {
+  color: rgba(255, 114, 92, 0.9);
 }
 
-.main01, .main02, .main03 {
+#main01, #main02, #main03 {
   margin: auto;
   margin-top: 35px;
   width: 310px;
@@ -119,12 +137,41 @@ footer p a {
   box-shadow: 2px 2px 10px rgba(255, 114, 92, 100);
   text-align: center;
 }
-.buttonLink:active {
+
+.btnModoClaro, .btnModoEscuro {
+  width: 100px;
+  padding: 10px;
+  border-radius: 10px; 
+  cursor: pointer;
+  font: normal 10pt Arial;
+  border: none;
+  color: white;
+  text-align: center;
+}
+
+.btnModoClaro { 
+  background-color: rgba(250, 246, 7, 0.7);
+  box-shadow: 2px 2px 10px rgba(250, 246, 7, 0.4);
+}
+
+.btnModoEscuro {
+  background-color: rgb(48, 105, 122, 0.7);
+  box-shadow: 2px 2px 10px rgb(48, 105, 122, 0.4);
+}
+
+.buttonLink:active, .btnModoClaro:active, .btnModoEscuro:active {
   transform: scale(0.95);
 }
 
 @media only screen and (max-width: 800px) {
   .main00 {
     width: auto;
+  }
+  #freepik {
+    align-items: center;
+    flex-direction: column;
+  }
+  .btnModoClaro, .btnModoEscuro {
+    margin-top: 20px;
   }
 }

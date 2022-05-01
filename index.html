@@ -3,6 +3,7 @@
 
   <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" href="./src/favicon.ico" type="image/x-icon">
@@ -12,30 +13,34 @@
 
   <body>
     <div class="bg"></div>
+    <div id="bgEscuro"></div>
     <div class="main00">
       <div id="freepik">
         <a href='https://www.freepik.com/vectors/programming' 
           alt="Imagem background created by storyset - www.freepik.com"
         >
-          <em>Imagem background created by storyset - <strong>www.freepik.com</strong></em>
+          <em id="freepikEm">Imagem background created by storyset - 
+            <strong id="freepikStrong">www.freepik.com</strong>
+          </em>
         </a>
+        <button type="button" id="btnModoCE" class="btnModoEscuro">Modo Escuro</button>
       </div>
       <header>
-        <h1>Acervo dos Exercícios</h1>
+        <h1 id="titulo">Acervo dos Exercícios</h1>
       </header>
       
       <main>
-        <section class="main01">
+        <section id="main01">
           <div class="tituloArea"><abbr title="HyperText Markup Language">HTML</abbr></div>
           <section id="areaLinkHTML"></section>
         </section>
-        <section class="main02">
+        <section id="main02">
           <div>
             <div class="tituloArea"><abbr title="Cascading Style Sheets">CSS</abbr></div>
           </div>
           <section id="areaLinkCSS"></section>
         </section>
-        <section class="main03">
+        <section id="main03">
           <div class="tituloArea"><abbr title="Cursos sobre HTML e/ou CSS">Cursos</abbr></div>
           <section id="areaLinkCursos"></section>
         </section>
