@@ -1,46 +1,42 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" type="text/html">
 
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" href="./src/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./src/index.css">
     <title>Entrada | Acervo dos Exercícios</title>
   </head>
 
   <body>
-    <div class="bg"></div>
-    <div id="bgEscuro"></div>
+    <picture><source class="bg" type="image/avif"></picture>
+    <div class="bgEscuro"></div>
     <div class="main00">
       <div id="freepik">
         <a href='https://www.freepik.com/vectors/programming' 
           alt="Imagem background created by storyset - www.freepik.com"
         >
-          <em id="freepikEm">Imagem background created by storyset - 
-            <strong id="freepikStrong">www.freepik.com</strong>
+          <em class="freepikEm">Imagem background created by storyset - 
+            <strong class="freepikStrong">www.freepik.com</strong>
           </em>
         </a>
         <button type="button" id="btnModoCE" class="btnModoEscuro">Modo Escuro</button>
       </div>
       <header>
-        <h1 id="titulo">Acervo dos Exercícios</h1>
+        <h1 class="titulo">Acervo dos Exercícios</h1>
       </header>
       
       <main>
-        <section id="main01">
+        <section class="mainEstilo">
           <div class="tituloArea"><abbr title="HyperText Markup Language">HTML</abbr></div>
           <section id="areaLinkHTML"></section>
         </section>
-        <section id="main02">
-          <div>
-            <div class="tituloArea"><abbr title="Cascading Style Sheets">CSS</abbr></div>
-          </div>
+        <section class="mainEstilo">
+          <div class="tituloArea"><abbr title="Cascading Style Sheets">CSS</abbr></div>
           <section id="areaLinkCSS"></section>
         </section>
-        <section id="main03">
+        <section class="mainEstilo">
           <div class="tituloArea"><abbr title="Cursos sobre HTML e/ou CSS">Cursos</abbr></div>
           <section id="areaLinkCursos"></section>
         </section>
@@ -52,8 +48,8 @@
         </a></p>
       </footer>
     </div>
-
-    <script src="./src/index.js"></script>
   </body>
 
+  <link type="text/css" rel="stylesheet" href="./index.css">
+  <script type="text/javascript" src="./index.js"></script>
 </html>
