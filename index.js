@@ -6,7 +6,6 @@ function carregar() {
   let areaLinkCSS = getById("areaLinkCSS"); 
   let areaLinkCursos = getById("areaLinkCursos"); 
   let btnModoCE = getById("btnModoCE");
-  window.document.getElementsByClassName("bgEscuro").setAttribute
   
   // Definir processos
   let url_atual = window.location.href;
