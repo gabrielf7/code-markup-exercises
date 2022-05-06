@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variedade de Links</title>
+  </head>
+
+  <body>
+      <h1>Variedade de Links</h1>
+
+      <h2>Link Normal</h2>
+      <h3>Tag "a" com link normal</h3>
+      <p>Tenho um repositório no github, <a href="https://github.com/gabrielf7">acesse aqui</a></p>
+
+      <h2>Link Interno</h2>
+      <h3>Tag "a" com link usando "target='_self'" e "rel='next'" ou "rel='prev'"</h3>
+      <!-- 
+        O "next" serve para avisar o próximo link do próprio site.
+        O "prev" serve para avisar o link anterior do próprio site.
+        O "_self" é um identificador usado no parâmetro target para acessar o link do próprio site.  
+      -->
+      <p>Para acessar outra parte do site, <a href="./src/index-05-links-exemplopg.html" target="_self" rel="next">
+        clica aqui.
+      </a></p>
+
+      <h2>Link Externo</h2>
+      <h3>Tag "a" com link externo usando "target='_blank'" e "rel='external'"</h3>
+      <!-- O "external" serve para identificar links externo ao site atual.  -->
+      <p>Tenho um repositório no github, <a href="https://github.com/gabrielf7" target="_blank" rel="external">
+        acesse aqui.
+      </a></p>
+      <h3>Tag "a" com link externo usando "rel='dofollow'" e o "rel='nofollow'"</h3>
+      <!-- O "dofollow" e o "nofollow" é um identificador usado, respectivamente, para indexar o contéudo do link pelo mecanismo de busca ou não.
+      -->
+      <p> Esta página é um oferecimento de <a href="https://www.hostnet.com.br/" target="_blank" rel="nofollow">
+        <strong>Hostnet</strong>.
+      </a></p>
+
+      <h2>Link de Download</h2>
+      <h3>Tag "a" com link de download usando "download='nomeDoPDF.pdf'" e o "type='application/pdf'"</h3>
+      <!-- O "download" e o "nofollow" é um identificador usado -->
+      <!-- O "type" e o "nofollow" é um identificador usado -->
+      <ul>
+        <li><a href="./src/Aula03-Cap10.pdf" download="Aula03-Cap10.pdf" type="application/pdf">
+          Baixar o PDF do curso.
+        </a></li>
+        <li><a href="./src/Aula03-Cap10.zip" download="Aula03-Cap10.zip" type="application/zip">
+          Baixar o PDF compactado do curso.
+        </a></li>
+      </ul>
+    </div> 
+  </body>
+
+</html>
