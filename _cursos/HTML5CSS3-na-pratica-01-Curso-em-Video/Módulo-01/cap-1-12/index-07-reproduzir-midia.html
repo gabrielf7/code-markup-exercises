@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
   <head>
     <meta charset="UTF-8">
@@ -10,6 +10,64 @@
 
   <body>
     <h1>Reproduzir Mídia</h1>
+
+    <h2>Vamos aprender a reproduzir áudios em HTML5</h2>
+    <!-- 
+      preload = "auto" iniciar no automático o carregamento do áudio, "metadata" carregar apenas algumas informções sobre o áudio (ex: duração), "none" fazer nada com o áudio no seu carregamento.
+      autoplay = áudio automático.
+      controls = controlar o áudio.
+      loop = repetir o áudio sem parar.
+    -->
+    <p>Guana Cast - PodCast feito em 2007.</p>
+    <p><small>Foi usado o
+      <a href="https://www.freeconvert.com/mp3-compressor" target="_blank" rel="noopener noreferrer">
+        freeconvert
+      </a> para esse áudio.</small>
+    </p>
+    <audio preload="metadata" controls loop>
+      <source src="./src/m-index-07/guanacast-33-freeconvert.mp3" type="audio/mpeg">
+      <p>Infelizmente seu navegador não consegue reproduzir esse áudio.
+        <a href="./src/m-index-07/guanacast-33-freeconvert.mp3" download="guanacast-33.mp3" type="audio/mpeg">
+          Clique aqui para baixar o arquivo MP3.
+        </a>
+      </p>
+    </audio>
+    <p>Música para ficar feliz! - Happy Mistake (Áudio licenciado pelo YouTube).</p>
+    <audio preload="metadata" controls loop>
+      <source src="./src/m-index-07/happy-mistake.mp3" type="audio/mpeg">
+      <p>Infelizmente seu navegador não consegue reproduzir esse áudio.
+        <a href="./src/m-index-07/happy-mistake.mp3" download="happy-mistake.mp3" type="audio/mpeg">
+          Clique aqui para baixar o arquivo MP3.
+        </a>
+      </p>
+    </audio>
+
+    <h2>Vamos aprender a reproduzir vídeos em HTML5</h2>
+    <h3>Reproduzir vídeo com a tag "video"</h3>
+    <p>Este vídeo está hospedado no servidor próprio.</p>
+    <p><small>Foi usado o
+      <a href="https://www.pexels.com/pt-br/video/vista-aerea-filmagem-com-drone-flutuando-flores-6114303/"
+        target="_blank" rel="noopener noreferrer">
+        Vídeo de Kei Scampa no Pexels
+      </a>para esse vídeo.</small>
+    </p>
+    <video width="500" poster="./src/m-index-07/pexels-photo-6114303.jpeg" controls loop>
+      <source src="./src/m-index-07/pexels-kei-scampa-6114303.mp4" type="video/mp4">
+      <source src="./src/m-index-07/pexels-kei-scampa-6114303.m4v" type="video/mp4">
+      <source src="./src/m-index-07/pexels-kei-scampa-6114303.webm" type="video/webm">
+      <p>Infelizmente seu navegador não consegue reproduzir esse vídeo.
+        <a href="./src/m-index-07/pexels-kei-scampa-6114303.mp4" download="pexels-kei-scampa-6114303.mp4"
+          type="video/mp4">
+          Clique aqui para baixar o arquivo MP4.
+        </a>
+      </p>
+    </video>
+    <h3>Reproduzir vídeo com a tag "iframe"</h3>
+    <h4>YouTube</h4>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/rLhhJQysKLk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h4>Vimeo</h4>
+    <iframe src="https://player.vimeo.com/video/197093965?h=7fbc516b5a&color=c9ff23&portrait=0" width="560" height="315"frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
   </body>
 
 </html>
