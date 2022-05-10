@@ -7,7 +7,7 @@ Em um curso dedicado ao iniciante até o avançado, o professor Gustavo Guanabar
 da linguagem até o uso em situações reais. Por conta disso, esse repositório representa as atividades práticas durante curso na plataforma 
 [Curso em vídeo](https://www.cursoemvideo.com/).
 
-> No momento, estou concluindo o [Módulo 1 de 5](https://www.cursoemvideo.com/curso/html5-css3-modulo1/).
+> No momento, estou concluindo o [Módulo 2 de 5](https://www.cursoemvideo.com/curso/html5-css3-modulo1/).
 
 ## Testar os desafios
 
