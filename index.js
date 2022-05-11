@@ -47,6 +47,7 @@ function carregar() {
     btnModoCE.innerHTML = "Modo Escuro";
     EstiloDeModo("claro");
     MudarEvento(ModoClaro, ModoEscuro);
+    localStorage.removeItem("styled", "escuro");
   }
   
   // Aplicar o Dark Mode
@@ -55,8 +56,10 @@ function carregar() {
     btnModoCE.innerHTML = "Modo Claro";
     EstiloDeModo("escuro");
     MudarEvento(ModoEscuro, ModoClaro);
+    localStorage.setItem("styled", "escuro");
   }
   btnModoCE.addEventListener('click', ModoEscuro);
+  localStorage.getItem("styled", "escuro") ? ModoEscuro() : "";
 
   // Criar links das aplicações dos exercícios
   function CriarLink(link, linkTitulo, pGetById){
