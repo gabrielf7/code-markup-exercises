@@ -1,0 +1,22 @@
+.linksConteudo {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#linkperfil1, #linkperfil2 {
+  width: 125px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+}
+#linkperfil2 {
+  background-color: rgb(92,235,223, 1);
+  box-shadow: 2px 2px 20px rgb(92,235,223, 0.4);
+}
+#linkperfil1 {
+  background-color: rgb(4,184,79, 1);
+  box-shadow: 2px 2px 20px rgb(4,184,79, 0.4);
+}
+#linkperfil1 strong, #linkperfil2 strong {
+  color: rgb(0, 0, 0, 0.9);
+}
