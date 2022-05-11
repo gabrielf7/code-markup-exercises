@@ -75,6 +75,6 @@ function carregar() {
   CriarLink("css/reflexo-espelho/reflexo-espelho.html", "Reflexo de Espelho", areaLinkCSS);
   CriarLink("css/template-colunas/teste-template.html", "Template de Colunas", areaLinkCSS);
   // Cursos
-  CriarLink("_cursos/HTML5CSS3-na-pratica-02-Curso-HTML5-para-quem-nao-sabe-nada-de-HTML5/gabrielf7/gabrielf7.html", "HTML5 - Paulo Andrade | Udemy", areaLinkCursos);
+  CriarLink("cursos/HTML5CSS3-na-pratica-02-Curso-HTML5-para-quem-nao-sabe-nada-de-HTML5/gabrielf7/gabrielf7.html", "HTML5 - Paulo Andrade | Udemy", areaLinkCursos);
 }
 window.addEventListener('load', carregar);
