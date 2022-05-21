@@ -1,11 +1,11 @@
--------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
 
-Capítulo 5 Aula 2 – Símbolos e Emoji no seu site
+Capï¿½tulo 5 Aula 2 ï¿½ Sï¿½mbolos e Emoji no seu site
 - https://emojipedia.org
 
-Capítulo 6 Aula 5 – Como mudar o favicon de um site
+Capï¿½tulo 6 Aula 5 ï¿½ Como mudar o favicon de um site
 - https://iconarchive.com
 - https://favicon.io
 
-Capítulo 10 Aula 3 – Links para download
+Capï¿½tulo 10 Aula 3 ï¿½ Links para download
 - https://www.iana.org/assignments/media-types/media-types.xhtml
