@@ -1,0 +1,13 @@
+/* Seletor Global */
+* {
+  height: 100%;
+}
+
+/* Seletor de Corpo */
+body {
+  /* linear-gradient(20deg, linear-gradient(to top, radial-gradient(circle, */
+  /* Styled 01: background-image: linear-gradient(to bottom, #7D1EA8, #B220F5, #1FF514, #A8301E, #F52507); */
+  /* Styled Instagram: */
+  background-image: linear-gradient(to top, #614DC6, #B43296, #E33664, #F87A28, #FEDC81 70%);
+  background-attachment: fixed;
+}

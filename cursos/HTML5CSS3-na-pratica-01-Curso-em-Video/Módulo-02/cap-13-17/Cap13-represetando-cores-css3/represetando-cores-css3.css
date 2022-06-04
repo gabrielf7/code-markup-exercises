@@ -1,0 +1,23 @@
+.text-01, .text-02, .text-03, .text-04 {
+  /* color: rgb(255, 255, 255); */
+  /* color: #ffffff; */
+  color: hsl(0, 0%, 100%);
+}
+
+.text-01 {
+  background-color: green;
+}
+
+.text-02 {
+  background-color: #00ff00;
+}
+
+.text-03 {
+  /* background-color: rgb(red, green, blue); */
+  background-color: rgb(0, 255, 0);
+}
+
+.text-04 {
+  /* background-color: hsl(hue, saturation, lightness); */
+  background-color: hsl(114, 100%, 50%);
+}
