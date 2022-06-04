@@ -1,4 +1,4 @@
-<img src="https://github.com/gabrielf7/code-markup-exercises/blob/main/_cursos/HTML5CSS3-na-pratica-01-Curso-em-Video/src/CSS3_and_HTML5_logos_and_wordmarks.svg" align="right" width="300">
+<img src="https://raw.githubusercontent.com/gabrielf7/code-markup-exercises/main/cursos/HTML5CSS3-na-pratica-01-Curso-em-Video/src/CSS3_and_HTML5_logos_and_wordmarks.png" align="right" width="300">
 
 # Curso de HTML5 e CSS3
 
