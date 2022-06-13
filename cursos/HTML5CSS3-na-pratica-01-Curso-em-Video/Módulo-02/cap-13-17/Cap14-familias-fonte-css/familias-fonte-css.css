@@ -1,0 +1,33 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  /* 
+    Medidas Absoluta:
+    - cm, mm, in, px, pt, pc
+
+    Medidas Relativas:
+    - em, ex, rem, vw, vh, %
+
+    16px geralmente é 1em
+  */
+
+  font-size: 1em;
+
+  /* linghter normal  bold bolder */
+}
+
+h1, h2 {
+  color: rgba(9, 209, 116, 0.979);
+  /* font-family: Georgia, 'Times New Roman', Times, serif; */
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+
+  /* Shorthand font 
+    - font-style -> font-weight -> font-size -> font-family
+  */
+
+  font: normal bold 2em Georgia, 'Times New Roman', Times, serif;
+}
+
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: justify;
+}

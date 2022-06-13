@@ -1,0 +1,21 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+}
+
+main {
+  padding: 40px;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: right;
+}
+
+p {
+  text-align: justify;
+  text-indent: 40px;
+}
