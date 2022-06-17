@@ -1,0 +1,41 @@
+
+div {
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  background-color: #00ff00;
+  border: 1px dashed #000000;
+  text-align: center;
+}
+
+div:hover {
+  background-color: yellow;
+}
+
+#div01 {
+
+}
+
+#div02 {
+
+}
+
+#div03 {
+
+}
+
+/* Teste com Pseudo-classe */
+section { margin-bottom: 25px; font-family: 'Times New Roman', Times, serif; cursor: pointer; }
+section > p {
+  display: none;
+}
+
+section:hover > p {
+  display: block;
+}
+
+section:hover > p {
+  color: #ffffff;
+  padding-left: 10px;
+  background: linear-gradient(to right, green, green, yellow 10%);
+}
