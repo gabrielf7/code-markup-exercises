@@ -1,0 +1,80 @@
+/* 
+  Sobre o box-shadow "1px 1px 1px black", significam respetivamente: deslocamento horizontal, deslocamento vertical, espalhamento e sombra.
+*/
+
+/* Seletores que repete atribuições */
+body, footer, footer > p {
+  margin: 0;
+}
+
+header, main {
+  margin: 10px;
+  padding: 10px;
+  background-color: white;
+}
+
+header, nav {
+  display: flex;
+}
+
+/* Seletores  */
+body {
+  background-color: dimgray;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  justify-content: space-between;
+}
+
+header > h1 {
+  font: normal bold 2.4em Georgia, 'Times New Roman', Times, serif;
+  text-shadow: 7px 7px 7px rgba(77, 253, 241, 0.77);
+}
+
+nav {
+  align-items: center;
+}
+
+nav > a {
+  margin: 0px 10px;
+  padding: 10px 30px;
+  background-color: rgb(28, 151, 145);
+  box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.37);
+  color: white;
+  font-weight: bold;
+}
+
+nav > a:hover {
+  text-decoration: underline;
+  border-bottom: 3px solid white;
+}
+
+main {
+  border-radius: 20px;
+}
+
+section#principal {
+  margin: 15px 0px;
+}
+
+article {
+  padding: 5px;
+  background-color: lightseagreen;
+}
+
+article > aside {
+  background-color: rgb(20, 105, 101);
+}
+
+footer {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}

@@ -1,0 +1,41 @@
+/* Box-Level */
+h1 {
+  background-color: greenyellow;
+  
+  /* Para transformar o box-level em inline (não existe altura e largura): "display: inline;" */
+
+  height: 300px;
+  width: 300px;
+
+  /* border: 1px solid darkorange; */
+  border-width: 20px;
+  border-style: solid;
+  border-color: darkorange;
+
+  /* padding: 10px; */
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+
+  /* margin: 50px; */
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+
+  /* outline: 25px dashed salmon; */
+  outline-width: 25px;
+  outline-style: dashed;
+  outline-color: salmon;
+}
+
+/* Inline-Level */
+a {
+  /* Para transformar o inline-level em box: "display: block;" */
+  padding: 5px;
+  border-width: 8px;
+  border-style: groove;
+  border-color: blue;
+}
+
