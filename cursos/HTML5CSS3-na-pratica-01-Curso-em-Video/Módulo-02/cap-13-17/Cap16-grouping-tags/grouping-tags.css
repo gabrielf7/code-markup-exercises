@@ -34,19 +34,6 @@ header, main {
   background-color: white;
 }
 
-header > h1 {
-  box-shadow: inset 6px 2px 7px 1px rgb(0 0 0 / 35%);
-}
-
-nav {
-  padding: 10px;
-  background-color: rgb(28, 151, 145);
-  box-shadow: 2px 4px 7px 1px rgb(0 0 0 / 47%);
-}
-
-nav > a {
-  padding: 0px 10px;
-}
 header {
   justify-content: space-between;
 }
