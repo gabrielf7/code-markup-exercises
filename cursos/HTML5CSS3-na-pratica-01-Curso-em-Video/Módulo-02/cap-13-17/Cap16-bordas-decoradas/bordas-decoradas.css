@@ -1,0 +1,9 @@
+h1 {
+  /* Para borda decorada funcionar é preciso que exista a propriedade "border" no seu escopo, respectivamente, com suas especificações. */
+  border: 20px solid transparent;
+  padding: 10px;
+  /* border-image: url("./borda-img.png") 35 stretch; */
+  border-image-source: url("./borda-img.png");
+  border-image-slice: 35;
+  border-image-repeat: stretch;
+}
