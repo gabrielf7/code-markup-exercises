@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
+
+body {
+  margin: 0;
+  background-color: white;
+}
+
+a {
+  text-decoration: none; color: inherit;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  padding: 50px;
+  background-color: black;
+}
+header h1, header p {
+  margin: auto;
+  text-align: center;
+}
+header h1, header p a {
+  color: white;
+}
+header p, header p a {
+  font-size: 0.9em;
+  font-family: sans-serif;
+}
+header h1 {
+  font-family: 'Passion One';
+  font-weight: bold;
+  font-size: 3.5em;
+}
+header p {
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.805);
+}
+header p a {
+  font-weight: bold;
+}
+
+main section {
+  padding: 20px;
+}
+
+main p {
+  width: 177px;
+  font-family: 'Sriracha';
+  text-align: left;
+}
+
+main .efeito-parallax-estrofe2, .efeito-parallax-estrofe5 {
+  padding: 20px 0px 70px 0px;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+main .efeito-parallax-estrofe2 > p, main .efeito-parallax-estrofe5 > p {
+  width: 197px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.377);
+  color: rgba(255, 255, 255, 0.925);
+}
+
+main .efeito-parallax-estrofe2 {
+  background-image: url("./imagens/background001.jpg");
+}
+
+main .efeito-parallax-estrofe5 {
+  background-image: url("./imagens/background002.jpg");
+}
+
+footer {
+  padding: 10px;
+  background-color: black;
+  color: rgba(255, 255, 255, 0.664);
+  text-align: center;
+}
+
+footer > a {
+  color: white;
+}
