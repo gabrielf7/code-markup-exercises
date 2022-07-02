@@ -1,6 +1,28 @@
+:root {
+  --nivel1-cor-01: rgba(255, 255, 255, 0.97);
+  --nivel1-cor-02: rgba(255, 255, 255, 0.9);
+  --nivel1-cor-03: rgba(255, 255, 255, 0.87);
+  --nivel1-cor-04: rgba(0, 0, 0, 0.4);
+  --nivel1-cor-05: rgba(0, 0, 0, 0.377);
+  --nivel1-cor-06: rgba(0, 0, 0, 0.27);
+  
+  --nivel2-cor-01: rgb(4, 193, 240, 0.7);
+  --nivel2-cor-02: rgb(48, 105, 122, 0.7);
+  --nivel2-cor-03: rgb(48, 105, 122, 0.4);
+
+  --nivel3-cor-01: rgba(255, 114, 92, 0.9);
+  --nivel3-cor-02: rgba(255, 114, 92, 0.87);
+  --nivel3-cor-03: rgba(255, 114, 92, 0.7);
+  --nivel3-cor-04: rgba(255, 114, 92, 0.5);
+
+  --nivel4-cor-01: rgba(250, 246, 7, 0.7);
+  --nivel4-cor-02: rgba(250, 246, 7, 0.4);
+}
+
 body {
   margin: 0;
-  font: normal 10pt Arial;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
 }
 
 abbr[title] {
@@ -12,13 +34,11 @@ a {
 }
 
 header h1 {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   text-align: center;
-  color: rgba(255, 114, 92, 0.7);
-}
-
-.h1EstiloEscuro {
-  color: rgba(255, 255, 255, 0.97);
+  font-size: 2.5em;
+  font-weight: bold;
+  color: var(--nivel3-cor-03);
 }
 
 main {
@@ -38,13 +58,15 @@ footer p {
   width: 125px;
   padding: 20px 20px;
   border-radius: 10px 80px;
-  background-color: rgba(255, 114, 92, 0.87);
-  box-shadow: 2px 2px 20px rgba(255, 114, 92, 0.5);
+  background-color: var(--nivel3-cor-02);
+  box-shadow: 2px 2px 20px var(--nivel3-cor-04);
 }
 
 footer p, footer a {
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--nivel1-cor-02);
 }
+
+/* Body */
 
 .bg, .bgEstiloEscuro{
   left: 0;
@@ -69,7 +91,7 @@ footer p, footer a {
 
 .bgEstiloEscuro {
   z-index: 50;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: var(--nivel1-cor-04);
 }
 
 .main00 {
@@ -79,6 +101,12 @@ footer p, footer a {
   position: absolute;
 }
 
+/* Header */
+
+.h1EstiloEscuro {
+  color: var(--nivel1-cor-01);
+}
+
 #freepik {
   display: flex;
   justify-content: space-between;
@@ -86,30 +114,33 @@ footer p, footer a {
   font: normal 7pt Arial;
 }
 .freepikEm {
-  color: rgb(4, 193, 240, 0.7);
+  color: var(--nivel2-cor-01);
 }
 .freepikStrong {
-  color: rgba(255, 114, 92, 0.9);
+  color: var(--nivel3-cor-01);
 }
 .freepikEmEstiloEscuro {
-  color: rgba(255, 255, 255, 0.87);
+  color: var(--nivel1-cor-03);
 }
 .freepikStrongEstiloEscuro {
-  color: rgba(255, 114, 92, 0.9);
+  color: var(--nivel3-cor-01);
 }
+
+/* Main */
 
 .mainEstilo, .mainEstiloEscuro {
   margin: auto;
   margin-top: 35px;
   width: 310px;
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.77);
   border-radius: 10px; 
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.377);
+  box-shadow: 4px 4px 10px var(--nivel1-cor-05);
 }
-
+.mainEstilo {
+  background-color: var(--nivel1-cor-03);
+}
 .mainEstiloEscuro {
-  background-color: rgb(48, 105, 122, 0.7);
+  background-color: var(--nivel2-cor-02);
 }
 
 #areaLinkHTML, #areaLinkCSS, #areaLinkCursos {
@@ -122,12 +153,12 @@ footer p, footer a {
   width: 75px;
   margin-top: -40px; 
   padding: 5px 5px; 
-  color: rgba(255, 255, 255, 0.87);
-  background-color: rgb(4, 193, 240, 0.77);
+  color: var(--nivel1-cor-03);
+  background-color: var(--nivel2-cor-01);
   text-align: center;
   font: normal 12pt Verdana;
   border-radius: 20px; 
-  box-shadow: 4px 2px 10px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 2px 10px var(--nivel1-cor-06);
 }
 
 .buttonLink {
@@ -138,9 +169,9 @@ footer p, footer a {
   cursor: pointer;
   font: normal 10pt Arial;
   border: none;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: rgba(255, 114, 92, 0.9);
-  box-shadow: 2px 2px 10px rgba(255, 114, 92, 0.9);
+  color: var(--nivel1-cor-03);
+  background-color: var(--nivel3-cor-01);
+  box-shadow: 2px 2px 10px var(--nivel3-cor-01);
   text-align: center;
 }
 
@@ -151,28 +182,31 @@ footer p, footer a {
   cursor: pointer;
   font: normal 10pt Arial;
   border: none;
-  color: rgba(255, 255, 255, 0.97);
+  color: var(--nivel1-cor-01);
   text-align: center;
 }
 
 .btnModoClaro { 
-  background-color: rgba(250, 246, 7, 0.7);
-  box-shadow: 2px 2px 10px rgba(250, 246, 7, 0.4);
+  background-color: var(--nivel4-cor-01);
+  box-shadow: 2px 2px 10px var(--nivel4-cor-02);
 }
 
 .btnModoEscuro {
-  background-color: rgb(48, 105, 122, 0.7);
-  box-shadow: 2px 2px 10px rgb(48, 105, 122, 0.4);
+  background-color: var(--nivel2-cor-02);
+  box-shadow: 2px 2px 10px var(--nivel2-cor-03);
 }
 
 .buttonLink:active, .btnModoClaro:active, .btnModoEscuro:active {
   transform: scale(0.95);
 }
 
+/* Mobile */
+
 @media only screen and (max-width: 800px) {
   header h1 {
     margin-top: 20px;
     margin-bottom: 40px;
+    font-size: 2.2em;
   }
   main {
     flex-direction: column;
