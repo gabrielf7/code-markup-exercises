@@ -1,30 +1,22 @@
-/* :root {
-  --cor-01: #F2F2F2;
-  --cor-02: #F2B199;
-  --cor-03: #F2695C;
-  --cor-04: #203A40;
-  --cor-05: #400101;
-} */
-
 :root {
-  --nivel1-cor-01: rgba(255, 255, 255, 0.97);
-  --nivel1-cor-02: rgba(255, 255, 255, 0.9);
-  --nivel1-cor-03: rgba(255, 255, 255, 0.87);
+  --nivel1-cor-01: rgba(242, 242, 242, 0.97);
+  --nivel1-cor-02: rgba(242, 242, 242, 0.9);
+  --nivel1-cor-03: rgba(242, 242, 242, 0.87);
   --nivel1-cor-04: rgba(0, 0, 0, 0.4);
   --nivel1-cor-05: rgba(0, 0, 0, 0.377);
   --nivel1-cor-06: rgba(0, 0, 0, 0.27);
   
-  --nivel2-cor-01: rgb(4, 193, 240, 0.7);
-  --nivel2-cor-02: rgb(48, 105, 122, 0.7);
-  --nivel2-cor-03: rgb(48, 105, 122, 0.4);
+  --nivel2-cor-01: rgb(211, 154, 133, 0.8);
+  --nivel2-cor-02: rgb(32, 58, 64, 0.7);
+  --nivel2-cor-03: rgb(32, 58, 64, 0.4);
 
-  --nivel3-cor-01: rgba(255, 114, 92, 0.9);
-  --nivel3-cor-02: rgba(255, 114, 92, 0.87);
-  --nivel3-cor-03: rgba(255, 114, 92, 0.7);
-  --nivel3-cor-04: rgba(255, 114, 92, 0.5);
+  --nivel3-cor-01: rgba(242, 105, 92, 0.9);
+  --nivel3-cor-02: rgba(242, 105, 92, 0.87);
+  --nivel3-cor-03: rgba(242, 105, 92, 0.7);
+  --nivel3-cor-04: rgba(242, 105, 92, 0.5);
 
-  --nivel4-cor-01: rgba(250, 246, 7, 0.7);
-  --nivel4-cor-02: rgba(250, 246, 7, 0.4);
+  --nivel4-cor-01: rgb(64, 1, 1, 0.7);
+  --nivel4-cor-02: rgba(64, 1, 1, 0.4);
 }
 
 body {
@@ -59,7 +51,7 @@ footer {
   display: flex;
   justify-content: center;
   text-align: center;
-  font: lighter 12pt Arial;
+  font: normal bold 1.2em Arial, Helvetica, sans-serif;
 }
 
 footer p {
@@ -119,7 +111,6 @@ footer p, footer a {
   display: flex;
   justify-content: space-between;
   padding: 10px 20px;
-  font: normal 7pt Arial;
 }
 .freepikEm {
   color: var(--nivel2-cor-01);
@@ -131,7 +122,10 @@ footer p, footer a {
   color: var(--nivel1-cor-03);
 }
 .freepikStrongEstiloEscuro {
-  color: var(--nivel3-cor-01);
+  color: var(--nivel2-cor-02);
+}
+.freepikStrongEstiloEscuro:hover {
+  border-bottom: 1px solid var(--nivel3-cor-02);
 }
 
 /* Main */
@@ -139,7 +133,7 @@ footer p, footer a {
 .mainEstilo, .mainEstiloEscuro {
   margin: auto;
   margin-top: 35px;
-  width: 310px;
+  min-width: 310px;
   padding: 20px;
   border-radius: 10px; 
   box-shadow: 4px 4px 10px var(--nivel1-cor-05);
@@ -160,22 +154,25 @@ footer p, footer a {
 .tituloArea {
   width: 75px;
   margin-top: -40px; 
-  padding: 5px 5px; 
+  padding: 7px 7px; 
   color: var(--nivel1-cor-03);
-  background-color: var(--nivel2-cor-01);
+  background-color: var(--nivel3-cor-01);
   text-align: center;
-  font: normal 12pt Verdana;
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: sans-serif, Verdana, Tahoma;
   border-radius: 20px; 
   box-shadow: 4px 2px 10px var(--nivel1-cor-06);
 }
 
 .buttonLink {
-  width: 125px;
+  min-width: 125px;
+  max-width: 225px;
   padding: 10px;
   margin-top: 20px;
   border-radius: 10px; 
   cursor: pointer;
-  font: normal 10pt Arial;
+  font: normal 400 1em Arial, Helvetica, sans-serif;
   border: none;
   color: var(--nivel1-cor-03);
   background-color: var(--nivel3-cor-01);
@@ -184,11 +181,13 @@ footer p, footer a {
 }
 
 .btnModoClaro, .btnModoEscuro {
-  width: 100px;
+  min-width: 125px;
   padding: 10px;
   border-radius: 10px; 
   cursor: pointer;
-  font: normal 10pt Arial;
+  font-size: 1.1em;
+  font-weight: bold;
+  font-style: normal;
   border: none;
   color: var(--nivel1-cor-01);
   text-align: center;
@@ -200,8 +199,8 @@ footer p, footer a {
 }
 
 .btnModoEscuro {
-  background-color: var(--nivel2-cor-02);
-  box-shadow: 2px 2px 10px var(--nivel2-cor-03);
+  background-color: var(--nivel3-cor-02);
+  box-shadow: 2px 2px 10px var(--nivel3-cor-03);
 }
 
 .buttonLink:active, .btnModoClaro:active, .btnModoEscuro:active {
