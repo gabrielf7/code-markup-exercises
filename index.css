@@ -145,7 +145,7 @@ footer p, footer a {
   background-color: var(--nivel2-cor-02);
 }
 
-#areaLinkHTML, #areaLinkCSS, #areaLinkCursos {
+#areaLink00, #areaLink01, #areaLink02 {
   display: flex;
   flex-direction: column;
   align-items: center;

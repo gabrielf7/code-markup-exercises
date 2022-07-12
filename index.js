@@ -2,13 +2,21 @@ function carregar() {
   // Buscar Elementos do HTML
   let getById = (element) => window.document.getElementById(element);
   let selectClass = (element) => window.document.querySelectorAll(`.${element}`);
-  let areaLinkHTML = getById("areaLinkHTML"); 
-  let areaLinkCSS = getById("areaLinkCSS"); 
-  let areaLinkCursos = getById("areaLinkCursos"); 
+  let areaLink00 = getById("areaLink00"); 
+  let areaLink01 = getById("areaLink01"); 
+  let areaLink02 = getById("areaLink02"); 
   let btnModoCE = getById("btnModoCE");
   
   // Definir processos
   let url_atual = window.location.href;
+  let link_elementos = [ 
+    { area: areaLink00, linkTitulo: "Vídeo do youtuber", link: "html/exibir-video-youtuber.html" },
+    { area: areaLink01, linkTitulo: "Efeito Borrado", link: "css/efeito-borrado/efeito-borrado.html" },
+    { area: areaLink01, linkTitulo: "Reflexo de Espelho", link: "css/reflexo-espelho/reflexo-espelho.html" },
+    { area: areaLink01, linkTitulo: "Template de Colunas", link: "css/template-colunas/teste-template.html" },
+    { area: areaLink02, linkTitulo: "HTML5 e CSS3 | Curso em Vídeo", link: "cursos/HTML5CSS3-na-pratica-01-Curso-em-Video/index.html" },
+    { area: areaLink02, linkTitulo: "HTML5 - Paulo Andrade | Udemy", link: "cursos/HTML5CSS3-na-pratica-02-Curso-HTML5-para-quem-nao-sabe-nada-de-HTML5/gabrielf7/gabrielf7.html" },
+  ];
   let darkMode_elementos = [ 
     { class01: 'bgEscuro', qualificarAtributo: "class", class02: "bgEstiloEscuro" }, 
     { class01: 'titulo', qualificarAtributo: "class", class02: "h1EstiloEscuro" }, 
@@ -16,6 +24,13 @@ function carregar() {
     { class01: 'freepikStrong', qualificarAtributo: "class", class02: "freepikStrongEstiloEscuro" }, 
     { class01: 'mainEstilo', qualificarAtributo: "class", class02: "mainEstiloEscuro" },
   ];
+  btnModoCE.addEventListener('click', ModoEscuro);
+  localStorage.getItem("styled", "escuro") ? ModoEscuro() : "";
+
+  // Mudar status do evento do EventListener
+  function MudarEvento(Evento01, Evento02) {
+    btnModoCE.removeEventListener("click", Evento01), btnModoCE.addEventListener("click", Evento02);
+  }
 
   // Aplicar o Dark Mode e o Light Mode com a subtituição da class (do HTML) por outra class
   function EstiloDeModo(modo) {
@@ -35,12 +50,6 @@ function carregar() {
       pClass.length == 1 ? estiloCom01 : estiloComMaisDe01;
     }
   }
-
-  // Mudar status do evento do EventListener
-  function MudarEvento(Evento01, Evento02) {
-    btnModoCE.removeEventListener("click", Evento01), btnModoCE.addEventListener("click", Evento02);
-  }
-
   // Aplicar o Light Mode
   function ModoClaro() {
     btnModoCE.setAttribute("class", "btnModoEscuro");
@@ -49,7 +58,6 @@ function carregar() {
     MudarEvento(ModoClaro, ModoEscuro);
     localStorage.removeItem("styled", "escuro");
   }
-  
   // Aplicar o Dark Mode
   function ModoEscuro() {
     btnModoCE.setAttribute("class", "btnModoClaro");
@@ -58,24 +66,19 @@ function carregar() {
     MudarEvento(ModoEscuro, ModoClaro);
     localStorage.setItem("styled", "escuro");
   }
-  btnModoCE.addEventListener('click', ModoEscuro);
-  localStorage.getItem("styled", "escuro") ? ModoEscuro() : "";
 
-  // Criar links das aplicações dos exercícios
-  function CriarLink(link, linkTitulo, pGetById){
-    let inserirConteudo = `
-      <a class="buttonLink" href="${url_atual}${link}" target="blank_">${linkTitulo}</a>
-    `;
-    pGetById.innerHTML += inserirConteudo;
+  // Criar o Botão para os links dos exercícios
+  function CriarLink(pGetById, linkTitulo, link){
+    let inserirConteudo = document.createElement("a");
+    inserirConteudo.setAttribute("class", "buttonLink");
+    inserirConteudo.href = `${url_atual}${link}`;
+    inserirConteudo.target = "blank_";
+    inserirConteudo.textContent = `${linkTitulo}`;
+    pGetById.insertBefore(inserirConteudo, pGetById.nextElementSibling);
   }
-  // HTML
-  CriarLink("html/exibir-video-youtuber.html", "Vídeo do youtuber", areaLinkHTML);
-  // CSS
-  CriarLink("css/efeito-borrado/efeito-borrado.html", "Efeito Borrado", areaLinkCSS);
-  CriarLink("css/reflexo-espelho/reflexo-espelho.html", "Reflexo de Espelho", areaLinkCSS);
-  CriarLink("css/template-colunas/teste-template.html", "Template de Colunas", areaLinkCSS);
-  // Cursos
-  CriarLink("cursos/HTML5CSS3-na-pratica-01-Curso-em-Video/index.html", "HTML5 e CSS3 | Curso em Vídeo", areaLinkCursos);
-  CriarLink("cursos/HTML5CSS3-na-pratica-02-Curso-HTML5-para-quem-nao-sabe-nada-de-HTML5/gabrielf7/gabrielf7.html", "HTML5 - Paulo Andrade | Udemy", areaLinkCursos);
+  // Exibir os Links
+  for (let indexArea = 0; indexArea < link_elementos.length; indexArea++) {
+    CriarLink(link_elementos[indexArea].area, link_elementos[indexArea].linkTitulo, link_elementos[indexArea].link);
+  }
 }
 window.addEventListener('load', carregar);
