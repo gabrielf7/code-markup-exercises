@@ -9,7 +9,7 @@ function carregar() {
   
   // Definir processos
   let url_hostname = window.location.hostname;
-  let url_all = `${url_hostname}/code-markup-exercises/`;
+  let url_all = `http://${url_hostname}/code-markup-exercises/`;
   let link_elementos = [ 
     { area: areaLink00, linkTitulo: "Vídeo do youtuber", link: "html/exibir-video-youtuber.html" },
     { area: areaLink01, linkTitulo: "Efeito Borrado", link: "css/efeito-borrado/efeito-borrado.html" },

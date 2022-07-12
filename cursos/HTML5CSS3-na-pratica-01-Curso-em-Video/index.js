@@ -11,7 +11,7 @@ function carregar() {
   
   // Definir processos
   let url_hostname = window.location.hostname;
-  let url_all = `${url_hostname}/code-markup-exercises/`;
+  let url_all = `http://${url_hostname}/code-markup-exercises/`;
   let link_elementos = [ 
     { area: areaLink00, linkTitulo: "MD01 - Desafio 01", link: "cursos/HTML5CSS3-na-pratica-01-Curso-em-Video/Módulo-01/desafios/desafio01/index-desafio01.html" }, 
     { area: areaLink00, linkTitulo: "MD01 - Desafio 02", link: "cursos/HTML5CSS3-na-pratica-01-Curso-em-Video/Módulo-01/desafios/desafio02/index-desafio02.html" }, 
