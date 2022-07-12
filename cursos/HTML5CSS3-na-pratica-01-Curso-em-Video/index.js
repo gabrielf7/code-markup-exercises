@@ -12,18 +12,18 @@ function carregar() {
   // Definir processos
   let url_atual = window.location.href;
   let link_elementos = [ 
-    { area: areaLink00, linkTitulo: "MD01 - Desafio 01", link: "Módulo-01/desafios/desafio01/index-desafio01.html" }, 
-    { area: areaLink00, linkTitulo: "MD01 - Desafio 02", link: "Módulo-01/desafios/desafio02/index-desafio02.html" }, 
-    { area: areaLink00, linkTitulo: "MD01 - Desafio 03", link: "Módulo-01/desafios/desafio03/index-desafio03.html" }, 
-    { area: areaLink00, linkTitulo: "MD01 - Desafio 04", link: "Módulo-01/desafios/desafio04/index-desafio04.html" }, 
-    { area: areaLink00, linkTitulo: "MD01 - Desafio 05", link: "Módulo-01/desafios/desafio05/index-desafio05.html" }, 
-    { area: areaLink00, linkTitulo: "MD01 - Desafio 06", link: "Módulo-01/desafios/desafio06/index-desafio06.html" }, 
-    { area: areaLink00, linkTitulo: "MD01 - Desafio 07", link: "Módulo-01/desafios/desafio07/index-desafio07.html" }, 
-    { area: areaLink00, linkTitulo: "MD01 - Desafio 08", link: "Módulo-01/desafios/desafio08/index-desafio08.html" }, 
-    { area: areaLink00, linkTitulo: "MD01 - Desafio 09", link: "Módulo-01/desafios/desafio09/index-desafio09.html" },
-    { area: areaLink01, linkTitulo: "MD02 - Desafio 10", link: "Módulo-02/desafios/desafio10/index-desafio10.html" }, 
-    { area: areaLink01, linkTitulo: "MD02 - Desafio 11", link: "Módulo-02/desafios/desafio11/index-desafio11.html" }, 
-    { area: areaLink01, linkTitulo: "MD02 - Desafio 12", link: "Módulo-02/desafios/desafio12/index-desafio12.html" },
+    { area: areaLink00, linkTitulo: "MD01 - Desafio 01", link: "cursos/HTML5CSS3-na-pratica-01-Curso-em-Video/Módulo-01/desafios/desafio01/index-desafio01.html" }, 
+    { area: areaLink00, linkTitulo: "MD01 - Desafio 02", link: "cursos/HTML5CSS3-na-pratica-01-Curso-em-Video/Módulo-01/desafios/desafio02/index-desafio02.html" }, 
+    { area: areaLink00, linkTitulo: "MD01 - Desafio 03", link: "cursos/HTML5CSS3-na-pratica-01-Curso-em-Video/Módulo-01/desafios/desafio03/index-desafio03.html" }, 
+    { area: areaLink00, linkTitulo: "MD01 - Desafio 04", link: "cursos/HTML5CSS3-na-pratica-01-Curso-em-Video/Módulo-01/desafios/desafio04/index-desafio04.html" }, 
+    { area: areaLink00, linkTitulo: "MD01 - Desafio 05", link: "cursos/HTML5CSS3-na-pratica-01-Curso-em-Video/Módulo-01/desafios/desafio05/index-desafio05.html" }, 
+    { area: areaLink00, linkTitulo: "MD01 - Desafio 06", link: "cursos/HTML5CSS3-na-pratica-01-Curso-em-Video/Módulo-01/desafios/desafio06/index-desafio06.html" }, 
+    { area: areaLink00, linkTitulo: "MD01 - Desafio 07", link: "cursos/HTML5CSS3-na-pratica-01-Curso-em-Video/Módulo-01/desafios/desafio07/index-desafio07.html" }, 
+    { area: areaLink00, linkTitulo: "MD01 - Desafio 08", link: "cursos/HTML5CSS3-na-pratica-01-Curso-em-Video/Módulo-01/desafios/desafio08/index-desafio08.html" }, 
+    { area: areaLink00, linkTitulo: "MD01 - Desafio 09", link: "cursos/HTML5CSS3-na-pratica-01-Curso-em-Video/Módulo-01/desafios/desafio09/index-desafio09.html" },
+    { area: areaLink01, linkTitulo: "MD02 - Desafio 10", link: "cursos/HTML5CSS3-na-pratica-01-Curso-em-Video/Módulo-02/desafios/desafio10/index-desafio10.html" }, 
+    { area: areaLink01, linkTitulo: "MD02 - Desafio 11", link: "cursos/HTML5CSS3-na-pratica-01-Curso-em-Video/Módulo-02/desafios/desafio11/index-desafio11.html" }, 
+    { area: areaLink01, linkTitulo: "MD02 - Desafio 12", link: "cursos/HTML5CSS3-na-pratica-01-Curso-em-Video/Módulo-02/desafios/desafio12/index-desafio12.html" },
   ];
   let darkMode_elementos = [ 
     { class01: 'bgEscuro', qualificarAtributo: "class", class02: "bgEstiloEscuro" }, 
