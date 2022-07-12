@@ -8,7 +8,8 @@ function carregar() {
   let btnModoCE = getById("btnModoCE");
   
   // Definir processos
-  let url_atual = window.location.href;
+  let url_hostname = window.location.hostname;
+  let url_all = `${url_hostname}/code-markup-exercises/`;
   let link_elementos = [ 
     { area: areaLink00, linkTitulo: "Vídeo do youtuber", link: "html/exibir-video-youtuber.html" },
     { area: areaLink01, linkTitulo: "Efeito Borrado", link: "css/efeito-borrado/efeito-borrado.html" },
@@ -71,7 +72,7 @@ function carregar() {
   function CriarLink(pGetById, linkTitulo, link){
     let inserirConteudo = document.createElement("a");
     inserirConteudo.setAttribute("class", "buttonLink");
-    inserirConteudo.href = `${url_atual}${link}`;
+    inserirConteudo.href = `${url_all}${link}`;
     inserirConteudo.target = "blank_";
     inserirConteudo.textContent = `${linkTitulo}`;
     pGetById.insertBefore(inserirConteudo, pGetById.nextElementSibling);

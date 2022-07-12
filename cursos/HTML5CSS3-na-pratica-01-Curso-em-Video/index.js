@@ -10,7 +10,8 @@ function carregar() {
   let btnModoCE = getById("btnModoCE");
   
   // Definir processos
-  let url_atual = window.location.href;
+  let url_hostname = window.location.hostname;
+  let url_all = `${url_hostname}/code-markup-exercises/`;
   let link_elementos = [ 
     { area: areaLink00, linkTitulo: "MD01 - Desafio 01", link: "cursos/HTML5CSS3-na-pratica-01-Curso-em-Video/Módulo-01/desafios/desafio01/index-desafio01.html" }, 
     { area: areaLink00, linkTitulo: "MD01 - Desafio 02", link: "cursos/HTML5CSS3-na-pratica-01-Curso-em-Video/Módulo-01/desafios/desafio02/index-desafio02.html" }, 
@@ -79,7 +80,7 @@ function carregar() {
   function CriarLink(pGetById, linkTitulo, link){
     let inserirConteudo = document.createElement("a");
     inserirConteudo.setAttribute("class", "buttonLink");
-    inserirConteudo.href = `${url_atual}${link}`;
+    inserirConteudo.href = `${url_all}${link}`;
     inserirConteudo.target = "blank_";
     inserirConteudo.textContent = `${linkTitulo}`;
     pGetById.insertBefore(inserirConteudo, pGetById.nextElementSibling);
