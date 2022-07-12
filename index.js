@@ -69,12 +69,13 @@ function carregar() {
     pGetById.innerHTML += inserirConteudo;
   }
   // HTML
-  CriarLink("/html/exibir-video-youtuber.html", "Vídeo do youtuber", areaLinkHTML);
+  CriarLink("html/exibir-video-youtuber.html", "Vídeo do youtuber", areaLinkHTML);
   // CSS
   CriarLink("css/efeito-borrado/efeito-borrado.html", "Efeito Borrado", areaLinkCSS);
   CriarLink("css/reflexo-espelho/reflexo-espelho.html", "Reflexo de Espelho", areaLinkCSS);
   CriarLink("css/template-colunas/teste-template.html", "Template de Colunas", areaLinkCSS);
   // Cursos
+  CriarLink("cursos/HTML5CSS3-na-pratica-01-Curso-em-Video/index.html", "HTML5 e CSS3 | Curso em Vídeo", areaLinkCursos);
   CriarLink("cursos/HTML5CSS3-na-pratica-02-Curso-HTML5-para-quem-nao-sabe-nada-de-HTML5/gabrielf7/gabrielf7.html", "HTML5 - Paulo Andrade | Udemy", areaLinkCursos);
 }
 window.addEventListener('load', carregar);

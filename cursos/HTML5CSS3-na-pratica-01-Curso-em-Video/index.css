@@ -1,0 +1,232 @@
+:root {
+  --nivel1-cor-01: rgba(242, 242, 242, 0.97);
+  --nivel1-cor-02: rgba(242, 242, 242, 0.9);
+  --nivel1-cor-03: rgba(242, 242, 242, 0.87);
+  --nivel1-cor-04: rgba(0, 0, 0, 0.4);
+  --nivel1-cor-05: rgba(0, 0, 0, 0.377);
+  --nivel1-cor-06: rgba(0, 0, 0, 0.27);
+  
+  --nivel2-cor-01: rgb(211, 154, 133, 0.8);
+  --nivel2-cor-02: rgb(32, 58, 64, 0.7);
+  --nivel2-cor-03: rgb(32, 58, 64, 0.4);
+
+  --nivel3-cor-01: rgba(242, 105, 92, 0.9);
+  --nivel3-cor-02: rgba(242, 105, 92, 0.87);
+  --nivel3-cor-03: rgba(242, 105, 92, 0.7);
+  --nivel3-cor-04: rgba(242, 105, 92, 0.5);
+
+  --nivel4-cor-01: rgb(64, 1, 1, 0.7);
+  --nivel4-cor-02: rgba(64, 1, 1, 0.4);
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+}
+
+abbr[title] {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header h1 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: var(--nivel3-cor-03);
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+footer {
+  margin-top: 10vw;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font: normal bold 1.2em Arial, Helvetica, sans-serif;
+}
+
+footer p {
+  width: 125px;
+  padding: 20px 20px;
+  border-radius: 10px 80px;
+  background-color: var(--nivel3-cor-02);
+  box-shadow: 2px 2px 20px var(--nivel3-cor-04);
+}
+
+footer p, footer a {
+  color: var(--nivel1-cor-02);
+}
+
+/* Body */
+
+.bg, .bgEstiloEscuro{
+  left: 0;
+  right: 0;
+  
+  position: fixed;
+  display: block;
+  height: 100vh;
+  width: 100vw;
+  
+  background-repeat: no-repeat;
+
+  filter: blur(5px);
+  transition:filter .5s ease;
+  backface-visibility: hidden;
+}
+
+.bg {
+  z-index: 1;
+  background-image: url('https://raw.githubusercontent.com/gabrielf7/code-markup-exercises/main/src/bg-imagem-ambiente-web.jpg');
+}
+
+.bgEstiloEscuro {
+  z-index: 50;
+  background-color: var(--nivel1-cor-04);
+}
+
+.main00 {
+  left: 0;
+  right: 0;
+  z-index: 100;
+  position: absolute;
+}
+
+/* Header */
+
+.h1EstiloEscuro {
+  color: var(--nivel1-cor-01);
+}
+
+#freepik {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+.freepikEm {
+  color: var(--nivel2-cor-01);
+}
+.freepikStrong {
+  color: var(--nivel3-cor-01);
+}
+.freepikEmEstiloEscuro {
+  color: var(--nivel1-cor-03);
+}
+.freepikStrongEstiloEscuro {
+  color: var(--nivel2-cor-02);
+}
+.freepikStrongEstiloEscuro:hover {
+  border-bottom: 1px solid var(--nivel3-cor-02);
+}
+
+/* Main */
+
+.mainEstilo, .mainEstiloEscuro {
+  margin: auto;
+  margin-top: 35px;
+  min-width: 310px;
+  padding: 20px;
+  border-radius: 10px; 
+  box-shadow: 4px 4px 10px var(--nivel1-cor-05);
+}
+.mainEstilo {
+  background-color: var(--nivel1-cor-03);
+}
+.mainEstiloEscuro {
+  background-color: var(--nivel2-cor-02);
+}
+
+#areaLink00, #areaLink01, #areaLink02, #areaLink03, #areaLink04 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tituloArea {
+  width: 75px;
+  margin-top: -40px; 
+  padding: 7px 7px; 
+  color: var(--nivel1-cor-03);
+  background-color: var(--nivel3-cor-01);
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: sans-serif, Verdana, Tahoma;
+  border-radius: 20px; 
+  box-shadow: 4px 2px 10px var(--nivel1-cor-06);
+}
+
+.buttonLink {
+  min-width: 125px;
+  max-width: 225px;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 10px; 
+  cursor: pointer;
+  font: normal 400 1em Arial, Helvetica, sans-serif;
+  border: none;
+  color: var(--nivel1-cor-03);
+  background-color: var(--nivel3-cor-01);
+  box-shadow: 2px 2px 10px var(--nivel3-cor-01);
+  text-align: center;
+}
+
+.btnModoClaro, .btnModoEscuro {
+  min-width: 125px;
+  padding: 10px;
+  border-radius: 10px; 
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: bold;
+  font-style: normal;
+  border: none;
+  color: var(--nivel1-cor-01);
+  text-align: center;
+}
+
+.btnModoClaro { 
+  background-color: var(--nivel4-cor-01);
+  box-shadow: 2px 2px 10px var(--nivel4-cor-02);
+}
+
+.btnModoEscuro {
+  background-color: var(--nivel3-cor-02);
+  box-shadow: 2px 2px 10px var(--nivel3-cor-03);
+}
+
+.buttonLink:active, .btnModoClaro:active, .btnModoEscuro:active {
+  transform: scale(0.95);
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 800px) {
+  header h1 {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 2.2em;
+  }
+  main {
+    flex-direction: column;
+  }
+  footer {
+    margin-top: 15vw;
+  }
+  #freepik {
+    align-items: center;
+    flex-direction: column;
+  }
+  .btnModoClaro, .btnModoEscuro {
+    margin-top: 20px;
+  }
+}
